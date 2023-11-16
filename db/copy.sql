@@ -1,7 +1,7 @@
-\copy publications FROM '../dataset/parsed/publication.csv' csv NULL AS 'null' QUOTE '''';
-\copy person FROM '../dataset/parsed/person.csv' csv NULL AS 'null' QUOTE '''';
-\copy author_editor_role FROM '../dataset/parsed/person_publication.csv' csv NULL AS 'null' QUOTE '''';
-\copy title FROM '../dataset/parsed/title.csv' csv NULL AS 'null' QUOTE '''';
-\copy cite FROM '../dataset/parsed/cite.csv' csv NULL AS 'null' QUOTE '''';
-\copy rel FROM '../dataset/parsed/rel.csv' csv NULL AS 'null' QUOTE '''';
-\copy series FROM '../dataset/parsed/series.csv' csv NULL AS 'null' QUOTE '''';
+\copy publication FROM '/home/diogo/uni/MIMUW-ADB/dataset/parsed/publication.csv' WITH CSV HEADER NULL AS 'null' QUOTE '''';
+\copy person FROM '/home/diogo/uni/MIMUW-ADB/dataset/parsed/person.csv' WITH CSV HEADER NULL AS 'null' QUOTE '''';
+\copy person_publication_relation FROM '/home/diogo/uni/MIMUW-ADB/dataset/parsed/person_publication.csv' WITH CSV HEADER NULL AS 'null' QUOTE '''';
+\copy title FROM '/home/diogo/uni/MIMUW-ADB/dataset/parsed/title.csv' WITH CSV HEADER NULL AS 'null' QUOTE '''';
+\copy cite FROM '/home/diogo/uni/MIMUW-ADB/dataset/parsed/cite.csv' WITH CSV HEADER NULL AS 'null' QUOTE '''';
+\copy rel FROM '/home/diogo/uni/MIMUW-ADB/dataset/parsed/rel.csv' WITH CSV HEADER NULL AS 'null' QUOTE '''';
+\copy series FROM '/home/diogo/uni/MIMUW-ADB/dataset/parsed/series.csv' WITH CSV HEADER NULL AS 'null' QUOTE '''';
