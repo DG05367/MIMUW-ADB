@@ -301,7 +301,7 @@ class PersonPublicationHandler(ContentHandler):
         self.publication_key = ""
         self.attrs = ""
         self.type = ""
-        self.orderedList = ['author_id','role_type','person_key','publication_key']
+        self.orderedList = ['relation_id','role','person_id','publication_key']
         self.attrDict = {};
         self.counter = 1
         self.counterDict = 1
@@ -325,19 +325,19 @@ class PersonPublicationHandler(ContentHandler):
                 self.personDict[self.person] = self.counterDict
                 self.counterDict = self.counterDict +1
             for attrKey in self.orderedList:
-                if attrKey == 'author_id':
+                if attrKey == 'relation_id':
                     self.attrDict[attrKey] = self.counter
                     self.counter = self.counter +1
-                elif attrKey == 'role_type':
+                elif attrKey == 'role':
                     self.attrDict[attrKey] = tag
-                elif attrKey == 'person_key':
+                elif attrKey == 'person_id':
                     self.attrDict[attrKey] = self.personDict[self.person]
                 elif attrKey == 'publication_key':
                     self.attrDict[attrKey] = self.publication_key
                 else:
                     self.attrDict[attrKey] = "null"
             writer.writerow(self.attrDict.values())
-            print(f"MDATE: {self.attrDict}")
+            print(f"CURRENT: {self.attrDict}")
         
             self.person = ""
         
@@ -347,13 +347,13 @@ class PersonPublicationHandler(ContentHandler):
             self.person += content.replace('\'', '`').replace(',', ';')
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 1:
         log.error(f"Usage: {sys.argv[0]} [target] [filename]\n[target]: publication, person, noteurlcite, series, title, rel\n[filename]: path to .xml file")
         exit(2)
         
     target = sys.argv[1]
 
-    filename = sys.argv[2]
+    filename = "../dataset/dblp.xml"
     
     if target == 'publication':
         f = open('../dataset/parsed/publication.csv', 'w')
@@ -381,7 +381,7 @@ if __name__ == '__main__':
         parse(filename, RelHandler())
         
     elif target == 'cite':
-        f = open('../dataset/parsed/rel.csv', 'w')
+        f = open('../dataset/parsed/cite.csv', 'w')
         writer = csv.writer(f)
         parse(filename, CiteHandler())
         

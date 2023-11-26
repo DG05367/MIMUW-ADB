@@ -1,0 +1,58 @@
+      person      | total_publications 
+------------------+--------------------
+ Marcelo Bertalmo |                119
+(1 row)
+
+                                                                                 QUERY PLAN                                                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize GroupAggregate  (cost=41101.34..402745.68 rows=1 width=23) (actual time=1278.107..1282.233 rows=1 loops=1)
+   ->  Gather  (cost=41101.34..402745.67 rows=2 width=23) (actual time=1277.984..1282.219 rows=3 loops=1)
+         Workers Planned: 2
+         Workers Launched: 2
+         ->  Partial GroupAggregate  (cost=40101.34..401745.47 rows=1 width=23) (actual time=1238.996..1238.997 rows=1 loops=3)
+               ->  Parallel Hash Join  (cost=40101.34..401745.45 rows=3 width=15) (actual time=307.556..1238.973 rows=40 loops=3)
+                     Hash Cond: (pr.person_id = p.id)
+                     ->  Parallel Seq Scan on person_publication_relation pr  (cost=0.00..333558.95 rows=10699095 width=4) (actual time=0.018..463.320 rows=8559809 loops=3)
+                     ->  Parallel Hash  (cost=40101.33..40101.33 rows=1 width=19) (actual time=258.755..258.755 rows=0 loops=3)
+                           Buckets: 1024  Batches: 1  Memory Usage: 40kB
+                           ->  Parallel Seq Scan on person p  (cost=0.00..40101.33 rows=1 width=19) (actual time=168.624..258.691 rows=0 loops=3)
+                                 Filter: ((person)::text = 'Marcelo Bertalmo'::text)
+                                 Rows Removed by Filter: 1146197
+ Planning Time: 0.466 ms
+ JIT:
+   Functions: 44
+   Options: Inlining false, Optimization false, Expressions true, Deforming true
+   Timing: Generation 6.198 ms, Inlining 0.000 ms, Optimization 2.971 ms, Emission 71.647 ms, Total 80.816 ms
+ Execution Time: 1284.367 ms
+(19 rows)
+
+----------------------------------------------------- CREATING INDEXES -----------------------------------------------------------
+
+CREATE INDEX
+CREATE INDEX
+
+---------------------------------------------------- AFTER INDEXING --------------------------------------------------------------
+
+
+      person      | total_publications 
+------------------+--------------------
+ Marcelo Bertalmo |                119
+(1 row)
+
+                                                                                          QUERY PLAN                                                                                          
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=1000.44..41111.63 rows=1 width=23) (actual time=299.507..303.377 rows=1 loops=1)
+   ->  Nested Loop  (cost=1000.44..41111.60 rows=7 width=15) (actual time=0.439..303.350 rows=119 loops=1)
+         ->  Gather  (cost=1000.00..41101.43 rows=1 width=19) (actual time=0.416..303.259 rows=1 loops=1)
+               Workers Planned: 2
+               Workers Launched: 2
+               ->  Parallel Seq Scan on person p  (cost=0.00..40101.33 rows=1 width=19) (actual time=164.052..263.674 rows=0 loops=3)
+                     Filter: ((person)::text = 'Marcelo Bertalmo'::text)
+                     Rows Removed by Filter: 1146197
+         ->  Index Only Scan using idx_person_publication_relation_person_id on person_publication_relation pr  (cost=0.44..9.54 rows=63 width=4) (actual time=0.018..0.058 rows=119 loops=1)
+               Index Cond: (person_id = p.id)
+               Heap Fetches: 0
+ Planning Time: 0.487 ms
+ Execution Time: 303.430 ms
+(13 rows)
+

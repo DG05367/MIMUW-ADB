@@ -51,6 +51,7 @@ CREATE TABLE series (
     id SERIAL  NOT NULL,
     series VARCHAR(2050)  NOT NULL,
     href VARCHAR(2050)  NULL,
+    aux VARCHAR(2050)  NULL,
     label VARCHAR(2050) NULL,
     type VARCHAR(2050) NULL,
     publication_key VARCHAR(2050)  NOT NULL,
@@ -87,7 +88,6 @@ CREATE TABLE title(
 CREATE TABLE cite (
     id SERIAL PRIMARY KEY,
     cite VARCHAR(255) REFERENCES publication(key),
-    aux VARCHAR(255),
     label VARCHAR(255),
     type VARCHAR(255),
     ref VARCHAR(255),

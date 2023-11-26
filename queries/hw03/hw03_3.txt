@@ -1,0 +1,21 @@
+    id    |             title              | bibtex | aux | label | type |  publication_key   
+---------+--------------------------------+--------+-----+-------+------+--------------------
+ 3663881 | Tania Raune FrankjaerHome Page |        |     |       |      | homepages/165/4664
+ 3663882 | Home Page                      |        |     |       |      | homepages/165/4664
+(2 rows)
+ 
+                                                        QUERY PLAN                                                        
+--------------------------------------------------------------------------------------------------------------------------
+ Gather  (cost=1000.00..215989.25 rows=1 width=2160) (actual time=490.219..493.287 rows=2 loops=1)
+   Workers Planned: 2
+   Workers Launched: 2
+   ->  Parallel Seq Scan on title  (cost=0.00..214989.15 rows=1 width=2160) (actual time=400.285..453.902 rows=1 loops=3)
+         Filter: ((publication_key)::text = 'homepages/165/4664'::text)
+         Rows Removed by Filter: 3409343
+ Planning Time: 0.122 ms
+ JIT:
+   Functions: 6
+   Options: Inlining false, Optimization false, Expressions true, Deforming true
+   Timing: Generation 2.166 ms, Inlining 0.000 ms, Optimization 1.529 ms, Emission 27.155 ms, Total 30.850 ms
+ Execution Time: 493.949 ms
+(12 rows)

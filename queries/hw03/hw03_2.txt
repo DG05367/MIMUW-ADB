@@ -1,0 +1,47 @@
+              key              |     type     |   mdate    |   publtype   | reviewid | rating | cdate | address |             booktitle              |  pages  | year | journal | volume | number | month |                       url                        |                      ee                       | school | publisher | note | cdrom | crossref | isbn | chapter | publnr | relation_id |  role  | person_id |        publication_id         | id |     person      | bibtex | orcid | label | type | id | series | href | label | type | publication_key | id | rel | label | type | uri | sort | publication_key | id |           title           | bibtex | aux | label | type |        publication_key        | id | cite | aux | label | type | ref | publication_key 
+-------------------------------+--------------+------------+--------------+----------+--------+-------+---------+------------------------------------+---------+------+---------+--------+--------+-------+--------------------------------------------------+-----------------------------------------------+--------+-----------+------+-------+----------+------+---------+--------+-------------+--------+-----------+-------------------------------+----+-----------------+--------+-------+-------+------+----+--------+------+-------+------+-----------------+----+-----+-------+------+-----+------+-----------------+----+---------------------------+--------+-----+-------+------+-------------------------------+----+------+-----+-------+------+-----+-----------------
+ reference/vision/RamanathD14a | incollection | 2017-07-12 | encyclopedia |          |        |       |         | Computer Vision; A Reference Guide | 123-132 | 2014 |         |        |        |       | db/reference/vision/vision2014.html#RamanathD14a | https://doi.org/10.1007/978-0-387-31439-6_452 |        |           |      |       |          |      |         |        |          46 | author |        37 | reference/vision/RamanathD14a | 37 | Rajeev Ramanath |        |       |       |      |    |        |      |       |      |                 |    |     |       |      |     |      |                 | 86 | Mark S. DrewColor Spaces. |        |     |       |      | reference/vision/RamanathD14a |    |      |     |       |      |     | 
+ reference/vision/RamanathD14a | incollection | 2017-07-12 | encyclopedia |          |        |       |         | Computer Vision; A Reference Guide | 123-132 | 2014 |         |        |        |       | db/reference/vision/vision2014.html#RamanathD14a | https://doi.org/10.1007/978-0-387-31439-6_452 |        |           |      |       |          |      |         |        |          47 | author |        38 | reference/vision/RamanathD14a | 38 | Mark S. Drew    |        |       |       |      |    |        |      |       |      |                 |    |     |       |      |     |      |                 | 86 | Mark S. DrewColor Spaces. |        |     |       |      | reference/vision/RamanathD14a |    |      |     |       |      |     | 
+(2 rows)
+
+                                                                           QUERY PLAN                                                                           
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Nested Loop Left Join  (cost=2000.99..580097.81 rows=308 width=11006) (actual time=825.495..1306.889 rows=2 loops=1)
+   ->  Nested Loop Left Join  (cost=1000.56..218740.30 rows=14 width=9380) (actual time=825.311..825.358 rows=1 loops=1)
+         ->  Nested Loop Left Join  (cost=1000.56..216102.60 rows=1 width=7776) (actual time=820.363..820.409 rows=1 loops=1)
+               ->  Nested Loop Left Join  (cost=0.56..22.00 rows=1 width=5616) (actual time=557.407..557.411 rows=1 loops=1)
+                     ->  Nested Loop Left Join  (cost=0.56..8.59 rows=1 width=5513) (actual time=557.354..557.358 rows=1 loops=1)
+                           ->  Index Scan using publication_pk on publication  (cost=0.56..8.58 rows=1 width=2929) (actual time=0.055..0.058 rows=1 loops=1)
+                                 Index Cond: ((key)::text = 'reference/vision/RamanathD14a'::text)
+                           ->  Seq Scan on series  (cost=0.00..0.00 rows=1 width=2584) (actual time=0.006..0.006 rows=0 loops=1)
+                                 Filter: ((publication_key)::text = 'reference/vision/RamanathD14a'::text)
+                     ->  Seq Scan on rel  (cost=0.00..13.40 rows=1 width=103) (actual time=0.047..0.047 rows=0 loops=1)
+                           Filter: ((publication_key)::text = 'reference/vision/RamanathD14a'::text)
+                           Rows Removed by Filter: 432
+               ->  Gather  (cost=1000.00..216080.59 rows=1 width=2160) (actual time=262.938..262.980 rows=1 loops=1)
+                     Workers Planned: 2
+                     Workers Launched: 2
+                     ->  Parallel Seq Scan on title  (cost=0.00..215080.49 rows=1 width=2160) (actual time=253.280..253.334 rows=0 loops=3)
+                           Filter: ((publication_key)::text = 'reference/vision/RamanathD14a'::text)
+                           Rows Removed by Filter: 3409343
+         ->  Seq Scan on cite  (cost=0.00..2637.56 rows=14 width=1604) (actual time=4.938..4.938 rows=0 loops=1)
+               Filter: ((publication_key)::text = 'reference/vision/RamanathD14a'::text)
+               Rows Removed by Filter: 112445
+   ->  Materialize  (cost=1000.43..361353.71 rows=22 width=1626) (actual time=0.181..481.526 rows=2 loops=1)
+         ->  Gather  (cost=1000.43..361353.60 rows=22 width=1626) (actual time=0.176..481.520 rows=2 loops=1)
+               Workers Planned: 2
+               Workers Launched: 2
+               ->  Nested Loop Left Join  (cost=0.43..360351.40 rows=9 width=1626) (actual time=308.148..466.966 rows=1 loops=3)
+                     ->  Parallel Seq Scan on person_publication_relation  (cost=0.00..360275.38 rows=9 width=39) (actual time=308.143..466.959 rows=1 loops=3)
+                           Filter: ((publication_id)::text = 'reference/vision/RamanathD14a'::text)
+                           Rows Removed by Filter: 8559808
+                     ->  Index Scan using person_pk on person  (cost=0.43..8.45 rows=1 width=1587) (actual time=0.005..0.005 rows=1 loops=2)
+                           Index Cond: (id = person_publication_relation.person_id)
+ Planning Time: 1.978 ms
+ JIT:
+   Functions: 48
+   Options: Inlining true, Optimization true, Expressions true, Deforming true
+   Timing: Generation 7.171 ms, Inlining 235.923 ms, Optimization 478.257 ms, Emission 190.117 ms, Total 911.468 ms
+ Execution Time: 1313.192 ms
+(37 rows)
+

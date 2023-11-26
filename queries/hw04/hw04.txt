@@ -1,0 +1,257 @@
+   id    |            person            | bibtex |        orcid        | label | type 
+---------+------------------------------+--------+---------------------+-------+------
+      65 | Vicent Caselles              |        |                     |       | 
+      66 | Simon Masnou                 |        |                     |       | 
+      67 | Guillermo Sapiro             |        |                     |       | 
+    7787 | Gabriele Steidl              |        |                     |       | 
+    8390 | David Tschumperl             |        |                     |       | 
+    8462 | Luminita A. Vese             |        |                     |       | 
+   20822 | Juan Cardelino               |        |                     |       | 
+   23301 | Giuseppe Valenzise           |        |                     |       | 
+   25711 | Jess Malo                    |        | 0000-0002-5684-8591 |       | 
+   29030 | Olivier Penacchio            |        |                     |       | 
+   34944 | Markus Wittmann              |        |                     |       | 
+   45262 | Gabriele Simone              |        | 0000-0002-7914-4693 |       | 
+   48184 | Carlos Eric Llorente-Peralta |        |                     |       | 
+   48345 | Mansour Eddaly               |        |                     |       | 
+   49432 | Leon N. Cooper               |        |                     |       | 
+   87461 | Fiona H. Evans               |        |                     |       | 
+   89134 | Norman Nolte                 |        |                     |       | 
+  104258 | Valerio Comerci              |        |                     |       | 
+  116322 | Milivoje Aleksic             |        |                     |       | 
+  117141 | Fritz Albregtsen             |        |                     |       | 
+  157987 | Kun-Cheng Tsai               |        |                     |       | 
+  174353 | Mike Turega                  |        |                     |       | 
+  176552 | Bernard Mrialdo              |        |                     |       | 
+  222266 | Hariprasad Kodamana          |        |                     |       | 
+  224335 | Stepan Pchelkin              |        |                     |       | 
+  226397 | Hamza Farooq                 |        | 0000-0001-5311-4368 |       | 
+  250022 | Danh Thi Ngoc Anh            |        |                     |       | 
+  250023 | Nguyen Binh Phuong Duy       |        | 0000-0003-1136-6609 |       | 
+  250024 | Sana Abida Amin              |        |                     |       | 
+  250027 | Rongheng Lin                 |        |                     |       | 
+  250043 | Shilpa Parkhi                |        |                     |       | 
+  291128 | Zygimantas Ziaukas           |        |                     |       | 
+  317876 | Kihun Hong                   |        | 0000-0002-5538-3630 |       | 
+  318159 | Yoshiharu Tani               |        |                     |       | 
+  318160 | Johanna Sochos               |        |                     |       | 
+  318161 | Radu Ciprian Bilcu           |        |                     |       | 
+  324637 | ron Monszpart                |        |                     |       | 
+  328141 | Rana Hanocka                 |        | 0000-0003-3214-3703 |       | 
+  334982 | Sietse Overbeek              |        |                     |       | 
+  335333 | Rafael Escarela-Perez        |        | 0000-0001-7415-3059 |       | 
+  355145 | Dong-Qing Zhang              |        |                     |       | 
+  360888 | Islam Nassar                 |        |                     |       | 
+  435780 | Andr Redert                  |        |                     |       | 
+  435781 | Marc Op de Beeck             |        |                     |       | 
+  491471 | Mats Sjberg                  |        |                     |       | 
+  492730 | Shubham Chaudhary 0003       |        |                     |       | 
+  493134 | Shin-Ru Hsu                  |        |                     |       | 
+  593914 | Sven Schuster                |        |                     |       | 
+  698103 | Yusuke Inoue                 |        |                     |       | 
+  758043 | Joseph Chipps                |        |                     |       | 
+  814298 | Shristi Bhattarai            |        |                     |       | 
+  816751 | George Batchkala             |        | 0000-0002-4899-4935 |       | 
+  895354 | Radhika Tekade               |        |                     |       | 
+  895660 | Niklas Spielbauer            |        |                     |       | 
+  895767 | David Tena-Gago              |        | 0000-0003-0593-442X |       | 
+  896190 | Manel Fredj                  |        |                     |       | 
+  896930 | Matteo Naccari               |        |                     |       | 
+  897735 | Shaoying Li                  |        |                     |       | 
+  909123 | Rang Long                    |        |                     |       | 
+  910021 | Guichun Li                   |        |                     |       | 
+  925658 | Leah Mikkelson               |        |                     |       | 
+  954515 | Sookhyun Yang                |        |                     |       | 
+  968744 | Koppolu Sasidhar             |        |                     |       | 
+  968837 | Olav P. Henschel             |        |                     |       | 
+  968843 | Shwetalaxmi Udayan           |        |                     |       | 
+  982823 | David Canales-Vasquez        |        |                     |       | 
+  982824 | Fbio Mendona                 |        |                     |       | 
+  982825 | Gabriel Juli-Serd            |        |                     |       | 
+ 1134531 | Darren Lim                   |        |                     |       | 
+ 1170754 | Bing-Huei Lu                 |        |                     |       | 
+ 1170776 | Chia-Ying Wang               |        |                     |       | 
+ 1170846 | Alejandro Martn Medrano Gil  |        | 0000-0003-0170-7975 |       | 
+ 1170933 | Josu Cobelo                  |        |                     |       | 
+ 1170934 | Joseba Laka                  |        |                     |       | 
+ 1171008 | Martin Beresford             |        |                     |       | 
+ 1172931 | B. E. Duewer                 |        |                     |       | 
+ 1175643 | Oliver Schwartz              |        |                     |       | 
+ 1176906 | Xiaokang Xie                 |        |                     |       | 
+ 1177298 | Kazuhiro Ohara               |        |                     |       | 
+ 1181238 | Martin Werner                |        |                     |       | 
+ 1866178 | Richard Cortland Tompkins    |        |                     |       | 
+ 1878295 | Andreas Nitsche              |        | 0000-0002-1438-5912 |       | 
+ 2099385 | Shuntaro Nishiura            |        |                     |       | 
+ 2559211 | A. L. Wilkinson              |        |                     |       | 
+ 2993929 | Ali Uysal                    |        |                     |       | 
+ 3177040 | Ika A. Satya                 |        |                     |       | 
+(86 rows)
+
+                                                                                              QUERY PLAN                                                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Unique  (cost=776459.86..776479.07 rows=138 width=1587) (actual time=2530.845..2535.268 rows=86 loops=1)
+   ->  Gather Merge  (cost=776459.86..776477.00 rows=138 width=1587) (actual time=2530.844..2535.250 rows=140 loops=1)
+         Workers Planned: 2
+         Workers Launched: 2
+         ->  Unique  (cost=775459.84..775461.05 rows=69 width=1587) (actual time=2489.796..2489.825 rows=47 loops=3)
+               ->  Sort  (cost=775459.84..775460.01 rows=69 width=1587) (actual time=2489.795..2489.801 rows=95 loops=3)
+                     Sort Key: p2.id, p2.person, p2.bibtex, p2.orcid, p2.label, p2.type
+                     Sort Method: quicksort  Memory: 29kB
+                     Worker 0:  Sort Method: quicksort  Memory: 29kB
+                     Worker 1:  Sort Method: quicksort  Memory: 29kB
+                     ->  Nested Loop  (cost=401745.92..775457.73 rows=69 width=1587) (actual time=1405.489..2489.613 rows=95 loops=3)
+                           ->  Parallel Hash Join  (cost=401745.49..775426.34 rows=69 width=4) (actual time=1405.461..2489.224 rows=135 loops=3)
+                                 Hash Cond: ((r2.publication_id)::text = (r1.publication_id)::text)
+                                 ->  Parallel Seq Scan on person_publication_relation r2  (cost=0.00..333558.95 rows=10699095 width=28) (actual time=0.009..493.248 rows=8559809 loops=3)
+                                 ->  Parallel Hash  (cost=401745.45..401745.45 rows=3 width=24) (actual time=1356.650..1356.652 rows=40 loops=3)
+                                       Buckets: 1024  Batches: 1  Memory Usage: 104kB
+                                       ->  Parallel Hash Join  (cost=40101.34..401745.45 rows=3 width=24) (actual time=483.623..1356.534 rows=40 loops=3)
+                                             Hash Cond: (r1.person_id = p1.id)
+                                             ->  Parallel Seq Scan on person_publication_relation r1  (cost=0.00..333558.95 rows=10699095 width=28) (actual time=0.016..471.893 rows=8559809 loops=3)
+                                             ->  Parallel Hash  (cost=40101.33..40101.33 rows=1 width=4) (actual time=442.094..442.095 rows=0 loops=3)
+                                                   Buckets: 1024  Batches: 1  Memory Usage: 40kB
+                                                   ->  Parallel Seq Scan on person p1  (cost=0.00..40101.33 rows=1 width=4) (actual time=418.100..442.074 rows=0 loops=3)
+                                                         Filter: ((person)::text = 'Marcelo Bertalmo'::text)
+                                                         Rows Removed by Filter: 1146197
+                           ->  Index Scan using person_pk on person p2  (cost=0.43..0.45 rows=1 width=1587) (actual time=0.002..0.002 rows=1 loops=405)
+                                 Index Cond: (id = r2.person_id)
+                                 Filter: ((person)::text <> 'Marcelo Bertalmo'::text)
+                                 Rows Removed by Filter: 0
+ Planning Time: 1.135 ms
+ JIT:
+   Functions: 85
+   Options: Inlining true, Optimization true, Expressions true, Deforming true
+   Timing: Generation 13.160 ms, Inlining 455.997 ms, Optimization 522.143 ms, Emission 199.486 ms, Total 1190.786 ms
+ Execution Time: 2539.518 ms
+(34 rows)
+
+------------------------------------------------------------ AFTER OPTIMIZATION -------------------------------------------------------
+
+
+   id    |            person            | bibtex |        orcid        | label | type 
+---------+------------------------------+--------+---------------------+-------+------
+      65 | Vicent Caselles              |        |                     |       | 
+      66 | Simon Masnou                 |        |                     |       | 
+      67 | Guillermo Sapiro             |        |                     |       | 
+    7787 | Gabriele Steidl              |        |                     |       | 
+    8390 | David Tschumperl             |        |                     |       | 
+    8462 | Luminita A. Vese             |        |                     |       | 
+   20822 | Juan Cardelino               |        |                     |       | 
+   23301 | Giuseppe Valenzise           |        |                     |       | 
+   25711 | Jess Malo                    |        | 0000-0002-5684-8591 |       | 
+   29030 | Olivier Penacchio            |        |                     |       | 
+   34944 | Markus Wittmann              |        |                     |       | 
+   45262 | Gabriele Simone              |        | 0000-0002-7914-4693 |       | 
+   48184 | Carlos Eric Llorente-Peralta |        |                     |       | 
+   48345 | Mansour Eddaly               |        |                     |       | 
+   49432 | Leon N. Cooper               |        |                     |       | 
+   87461 | Fiona H. Evans               |        |                     |       | 
+   89134 | Norman Nolte                 |        |                     |       | 
+  104258 | Valerio Comerci              |        |                     |       | 
+  116322 | Milivoje Aleksic             |        |                     |       | 
+  117141 | Fritz Albregtsen             |        |                     |       | 
+  157987 | Kun-Cheng Tsai               |        |                     |       | 
+  174353 | Mike Turega                  |        |                     |       | 
+  176552 | Bernard Mrialdo              |        |                     |       | 
+  222266 | Hariprasad Kodamana          |        |                     |       | 
+  224335 | Stepan Pchelkin              |        |                     |       | 
+  226397 | Hamza Farooq                 |        | 0000-0001-5311-4368 |       | 
+  250022 | Danh Thi Ngoc Anh            |        |                     |       | 
+  250023 | Nguyen Binh Phuong Duy       |        | 0000-0003-1136-6609 |       | 
+  250024 | Sana Abida Amin              |        |                     |       | 
+  250027 | Rongheng Lin                 |        |                     |       | 
+  250043 | Shilpa Parkhi                |        |                     |       | 
+  291128 | Zygimantas Ziaukas           |        |                     |       | 
+  317876 | Kihun Hong                   |        | 0000-0002-5538-3630 |       | 
+  318159 | Yoshiharu Tani               |        |                     |       | 
+  318160 | Johanna Sochos               |        |                     |       | 
+  318161 | Radu Ciprian Bilcu           |        |                     |       | 
+  324637 | ron Monszpart                |        |                     |       | 
+  328141 | Rana Hanocka                 |        | 0000-0003-3214-3703 |       | 
+  334982 | Sietse Overbeek              |        |                     |       | 
+  335333 | Rafael Escarela-Perez        |        | 0000-0001-7415-3059 |       | 
+  355145 | Dong-Qing Zhang              |        |                     |       | 
+  360888 | Islam Nassar                 |        |                     |       | 
+  435780 | Andr Redert                  |        |                     |       | 
+  435781 | Marc Op de Beeck             |        |                     |       | 
+  491471 | Mats Sjberg                  |        |                     |       | 
+  492730 | Shubham Chaudhary 0003       |        |                     |       | 
+  493134 | Shin-Ru Hsu                  |        |                     |       | 
+  593914 | Sven Schuster                |        |                     |       | 
+  698103 | Yusuke Inoue                 |        |                     |       | 
+  758043 | Joseph Chipps                |        |                     |       | 
+  814298 | Shristi Bhattarai            |        |                     |       | 
+  816751 | George Batchkala             |        | 0000-0002-4899-4935 |       | 
+  895354 | Radhika Tekade               |        |                     |       | 
+  895660 | Niklas Spielbauer            |        |                     |       | 
+  895767 | David Tena-Gago              |        | 0000-0003-0593-442X |       | 
+  896190 | Manel Fredj                  |        |                     |       | 
+  896930 | Matteo Naccari               |        |                     |       | 
+  897735 | Shaoying Li                  |        |                     |       | 
+  909123 | Rang Long                    |        |                     |       | 
+  910021 | Guichun Li                   |        |                     |       | 
+  925658 | Leah Mikkelson               |        |                     |       | 
+  954515 | Sookhyun Yang                |        |                     |       | 
+  968744 | Koppolu Sasidhar             |        |                     |       | 
+  968837 | Olav P. Henschel             |        |                     |       | 
+  968843 | Shwetalaxmi Udayan           |        |                     |       | 
+  982823 | David Canales-Vasquez        |        |                     |       | 
+  982824 | Fbio Mendona                 |        |                     |       | 
+  982825 | Gabriel Juli-Serd            |        |                     |       | 
+ 1134531 | Darren Lim                   |        |                     |       | 
+ 1170754 | Bing-Huei Lu                 |        |                     |       | 
+ 1170776 | Chia-Ying Wang               |        |                     |       | 
+ 1170846 | Alejandro Martn Medrano Gil  |        | 0000-0003-0170-7975 |       | 
+ 1170933 | Josu Cobelo                  |        |                     |       | 
+ 1170934 | Joseba Laka                  |        |                     |       | 
+ 1171008 | Martin Beresford             |        |                     |       | 
+ 1172931 | B. E. Duewer                 |        |                     |       | 
+ 1175643 | Oliver Schwartz              |        |                     |       | 
+ 1176906 | Xiaokang Xie                 |        |                     |       | 
+ 1177298 | Kazuhiro Ohara               |        |                     |       | 
+ 1181238 | Martin Werner                |        |                     |       | 
+ 1866178 | Richard Cortland Tompkins    |        |                     |       | 
+ 1878295 | Andreas Nitsche              |        | 0000-0002-1438-5912 |       | 
+ 2099385 | Shuntaro Nishiura            |        |                     |       | 
+ 2559211 | A. L. Wilkinson              |        |                     |       | 
+ 2993929 | Ali Uysal                    |        |                     |       | 
+ 3177040 | Ika A. Satya                 |        |                     |       | 
+(86 rows)
+
+                                                                                           QUERY PLAN                                                                                           
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Unique  (cost=776462.33..776483.39 rows=177 width=1587) (actual time=2445.557..2450.803 rows=86 loops=1)
+   ->  Gather Merge  (cost=776462.33..776482.94 rows=177 width=1587) (actual time=2445.555..2450.772 rows=286 loops=1)
+         Workers Planned: 2
+         Workers Launched: 2
+         ->  Sort  (cost=775462.30..775462.49 rows=74 width=1587) (actual time=2404.522..2404.529 rows=95 loops=3)
+               Sort Key: p2.id
+               Sort Method: quicksort  Memory: 30kB
+               Worker 0:  Sort Method: quicksort  Memory: 29kB
+               Worker 1:  Sort Method: quicksort  Memory: 28kB
+               ->  Nested Loop  (cost=401745.92..775460.01 rows=74 width=1587) (actual time=1371.120..2404.442 rows=95 loops=3)
+                     ->  Parallel Hash Join  (cost=401745.49..775426.34 rows=74 width=4) (actual time=1371.096..2404.087 rows=135 loops=3)
+                           Hash Cond: ((r2.publication_id)::text = (r1.publication_id)::text)
+                           ->  Parallel Seq Scan on person_publication_relation r2  (cost=0.00..333558.95 rows=10699095 width=28) (actual time=0.008..466.296 rows=8559809 loops=3)
+                           ->  Parallel Hash  (cost=401745.45..401745.45 rows=3 width=24) (actual time=1320.432..1320.434 rows=40 loops=3)
+                                 Buckets: 1024  Batches: 1  Memory Usage: 104kB
+                                 ->  Parallel Hash Join  (cost=40101.34..401745.45 rows=3 width=24) (actual time=461.151..1320.313 rows=40 loops=3)
+                                       Hash Cond: (r1.person_id = p1.id)
+                                       ->  Parallel Seq Scan on person_publication_relation r1  (cost=0.00..333558.95 rows=10699095 width=28) (actual time=0.015..462.504 rows=8559809 loops=3)
+                                       ->  Parallel Hash  (cost=40101.33..40101.33 rows=1 width=4) (actual time=423.084..423.085 rows=0 loops=3)
+                                             Buckets: 1024  Batches: 1  Memory Usage: 40kB
+                                             ->  Parallel Seq Scan on person p1  (cost=0.00..40101.33 rows=1 width=4) (actual time=398.633..423.065 rows=0 loops=3)
+                                                   Filter: ((person)::text = 'Marcelo Bertalmo'::text)
+                                                   Rows Removed by Filter: 1146197
+                     ->  Index Scan using person_pk on person p2  (cost=0.43..0.45 rows=1 width=1587) (actual time=0.002..0.002 rows=1 loops=405)
+                           Index Cond: (id = r2.person_id)
+                           Filter: ((person)::text <> 'Marcelo Bertalmo'::text)
+                           Rows Removed by Filter: 0
+ Planning Time: 1.504 ms
+ JIT:
+   Functions: 82
+   Options: Inlining true, Optimization true, Expressions true, Deforming true
+   Timing: Generation 12.250 ms, Inlining 475.753 ms, Optimization 477.815 ms, Emission 169.138 ms, Total 1134.956 ms
+ Execution Time: 2455.740 ms
+(33 rows)
