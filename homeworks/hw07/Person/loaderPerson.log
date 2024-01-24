@@ -1,0 +1,58 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Wed Dec 13 23:13:37 2023
+Version 21.11.0.0.0
+
+Copyright (c) 1982, 2023, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loaderPerson.ctl
+Data File:      /home/others/ti1140/MIMUW-ADB/parsed/person.csv
+  Bad File:     person.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table PERSON, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ID                                                        SEQUENCE (MAX, 1)
+PERSON                              FIRST     *   ,  O(") CHARACTER            
+BIBTEX                               NEXT     *   ,  O(") CHARACTER            
+    NULL if BIBTEX = 0X6e756c6c(character 'null')
+ORCID                                NEXT     *   ,  O(") CHARACTER            
+    NULL if ORCID = 0X6e756c6c(character 'null')
+LABEL                                NEXT     *   ,  O(") CHARACTER            
+    NULL if LABEL = 0X6e756c6c(character 'null')
+TYPE                                 NEXT     *   ,  O(") CHARACTER            
+    NULL if TYPE = 0X6e756c6c(character 'null')
+
+
+Table PERSON:
+  3438591 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 328250 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:       3438591
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Wed Dec 13 23:13:37 2023
+Run ended on Wed Dec 13 23:14:41 2023
+
+Elapsed time was:     00:01:03.83
+CPU time was:         00:00:04.72

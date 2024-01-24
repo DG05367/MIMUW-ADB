@@ -1,0 +1,39 @@
+oracle db with data and run queries check differences.
+pw: diogog 
+
+LOAD DATA
+INFILE
+INSERT INTO TABLE
+REENABLE
+FIELDS TERMINATED BY
+TRAILING NULLCOLS
+(translation)
+
+2 MODES: 
+NORMAL MODE - IS ARRAY OF INSERTS - ARRAY PROCESSING
+- NOT VERY FAST
+
+DIRECT MODE - FORMATS DATA BLOCK FOR TABLE, WHEN ITS READY PUTS IN TABLE
+- FASTER BUT ASSUMES THERE IS NO SPACE FOR CONSTANTS NEEDS TO BE REENABLED
+TABLE IS LOCKED OTHER SESSIONS CANNOT ACCESS TABLE
+CAN ALSO BE USED TO TRANSFER FROM TABLE TO TABLE
+
+CHAR TYPE BY DEFAULT IS 255 - 1 BYTE - ORACLE USE VARIABLE SIZE
+
+adaptive plan
+
+hw6:
+
+
+
+next hw:
+last chance to come with previous assignments
+fix everything
+oracle is more important
+next week:
+hash indexes - look up for postgres think where we can use it and make an example
+
+functional indexes - both oracle and postgres(possibly)
+ - not on a single column or a group of columns but ones created on expressions
+ - very specialized
+ - come up with a query where such index would help and add it

@@ -1,0 +1,32 @@
+ id |            cite             | aux | label | type | ref |         publication_key         
+----+-----------------------------+-----+-------+------+-----+---------------------------------
+  7 | journals/jacm/GoldreichMW91 |     |       |      |     | reference/crypt/Schoenmakers11l
+(1 row)
+
+                                             QUERY PLAN                                              
+-----------------------------------------------------------------------------------------------------
+ Seq Scan on cite  (cost=0.00..2637.57 rows=8 width=1604) (actual time=0.021..29.434 rows=1 loops=1)
+   Filter: ((cite)::text = 'journals/jacm/GoldreichMW91'::text)
+   Rows Removed by Filter: 112445
+ Planning Time: 0.163 ms
+ Execution Time: 29.462 ms
+(5 rows)
+
+================================== CREATING INDEX ================================
+
+CREATE INDEX
+
+
+===================================================================================
+
+
+                                                        QUERY PLAN                                                         
+---------------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on cite  (cost=4.06..34.23 rows=8 width=1604) (actual time=0.052..0.054 rows=1 loops=1)
+   Recheck Cond: ((cite)::text = 'journals/jacm/GoldreichMW91'::text)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on cite_cite_hash_idx  (cost=0.00..4.06 rows=8 width=0) (actual time=0.039..0.039 rows=1 loops=1)
+         Index Cond: ((cite)::text = 'journals/jacm/GoldreichMW91'::text)
+ Planning Time: 0.429 ms
+ Execution Time: 3.150 ms
+(7 rows)

@@ -1,0 +1,10 @@
+                                                                 QUERY PLAN                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on person  (cost=197.68..22244.02 rows=17193 width=1587) (actual time=9.546..32.203 rows=16067 loops=1)
+   Recheck Cond: (SUBSTRING(person FROM 1 FOR 4) = 'John'::text)
+   Heap Blocks: exact=10068
+   ->  Bitmap Index Scan on idx_person_name_substring  (cost=0.00..193.38 rows=17193 width=0) (actual time=4.058..4.059 rows=16067 loops=1)
+         Index Cond: (SUBSTRING(person FROM 1 FOR 4) = 'John'::text)
+ Planning Time: 0.149 ms
+ Execution Time: 33.773 ms
+(7 rows)

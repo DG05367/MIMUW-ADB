@@ -1,0 +1,101 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Wed Dec 13 23:50:34 2023
+Version 21.11.0.0.0
+
+Copyright (c) 1982, 2023, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loaderPublication.ctl
+Data File:      /home/others/ti1140/MIMUW-ADB/parsed/publication.csv
+  Bad File:     publication.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table PUBLICATION, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+KEY                                 FIRST     *   ,  O(") CHARACTER            
+TYPE                                 NEXT     *   ,  O(") CHARACTER            
+MDATE                                NEXT     *   ,  O(") CHARACTER            
+    NULL if MDATE = 0X6e756c6c(character 'null')
+PUBLTYPE                             NEXT     *   ,  O(") CHARACTER            
+    NULL if PUBLTYPE = 0X6e756c6c(character 'null')
+REVIEWID                             NEXT     *   ,  O(") CHARACTER            
+    NULL if REVIEWID = 0X6e756c6c(character 'null')
+RATING                               NEXT     *   ,  O(") CHARACTER            
+    NULL if RATING = 0X6e756c6c(character 'null')
+CDATE                                NEXT     *   ,  O(") CHARACTER            
+    NULL if CDATE = 0X6e756c6c(character 'null')
+ADDRESS                              NEXT     *   ,  O(") CHARACTER            
+    NULL if ADDRESS = 0X6e756c6c(character 'null')
+BOOKTITLE                            NEXT     *   ,  O(") CHARACTER            
+    NULL if BOOKTITLE = 0X6e756c6c(character 'null')
+PAGES                                NEXT     *   ,  O(") CHARACTER            
+    NULL if PAGES = 0X6e756c6c(character 'null')
+PUBL_YEAR                            NEXT     *   ,  O(") CHARACTER            
+    NULL if PUBL_YEAR = 0X6e756c6c(character 'null')
+JOURNAL                              NEXT     *   ,  O(") CHARACTER            
+    NULL if JOURNAL = 0X6e756c6c(character 'null')
+VOLUME                               NEXT     *   ,  O(") CHARACTER            
+    NULL if VOLUME = 0X6e756c6c(character 'null')
+NUM                                  NEXT     *   ,  O(") CHARACTER            
+    NULL if NUM = 0X6e756c6c(character 'null')
+PUBL_MONTH                           NEXT     *   ,  O(") CHARACTER            
+    NULL if PUBL_MONTH = 0X6e756c6c(character 'null')
+URL                                  NEXT     *   ,  O(") CHARACTER            
+    NULL if URL = 0X6e756c6c(character 'null')
+EE                                   NEXT     *   ,  O(") CHARACTER            
+    NULL if EE = 0X6e756c6c(character 'null')
+SCHOOL                               NEXT     *   ,  O(") CHARACTER            
+    NULL if SCHOOL = 0X6e756c6c(character 'null')
+PUBLISHER                            NEXT     *   ,  O(") CHARACTER            
+    NULL if PUBLISHER = 0X6e756c6c(character 'null')
+NOTE                                 NEXT     *   ,  O(") CHARACTER            
+    NULL if NOTE = 0X6e756c6c(character 'null')
+CDROM                                NEXT     *   ,  O(") CHARACTER            
+    NULL if CDROM = 0X6e756c6c(character 'null')
+CROSSREF                             NEXT     *   ,  O(") CHARACTER            
+    NULL if CROSSREF = 0X6e756c6c(character 'null')
+ISBN                                 NEXT     *   ,  O(") CHARACTER            
+    NULL if ISBN = 0X6e756c6c(character 'null')
+CHAPTER                              NEXT     *   ,  O(") CHARACTER            
+    NULL if CHAPTER = 0X6e756c6c(character 'null')
+PUBLNR                               NEXT     *   ,  O(") CHARACTER            
+    NULL if PUBLNR = 0X6e756c6c(character 'null')
+
+value used for ROWS parameter changed from 250 to 162
+ORA-01653: unable to extend table TI1140.PUBLICATION by 128 in tablespace ZBD
+
+SQL*Loader-605: Non-data dependent ORACLE error occurred -- load discontinued.
+
+Specify SKIP=3402 when continuing the load.
+
+Table PUBLICATION:
+  3402 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                1044900 bytes(162 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Wed Dec 13 23:50:34 2023
+Run ended on Wed Dec 13 23:50:35 2023
+
+Elapsed time was:     00:00:01.09
+CPU time was:         00:00:00.07
